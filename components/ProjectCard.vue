@@ -19,3 +19,50 @@ defineProps({
         </div>
     </div>
 </template>
+
+<style lang="scss">
+.project-card {
+    $card-padding: 10px;
+    $card-border-radius: 10px;
+
+    overflow: hidden;
+    border-radius: $card-border-radius;
+    position: relative;
+    width: 360px;
+    aspect-ratio: 16/12;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .project-info {
+        position: absolute;
+        bottom: $card-padding;
+        border-radius: calc($card-border-radius - ($card-padding * 2));
+        overflow: hidden;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $glass-black-dark;
+        backdrop-filter: $default-blur;
+        width: calc(100% - ($card-padding * 2));
+        padding: calc($card-padding * 2);
+        box-shadow: $default-shadow;
+
+        .title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+}
+</style>

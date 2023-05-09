@@ -59,7 +59,7 @@ const skills = [
             padding: 5px 8px;
             font-size: 13px;
             border-radius: 5px;
-            box-shadow: 0 0 20px rgba($black, 0.3);
+            box-shadow: $default-shadow;
             user-select: none;
             transition: 0.4s ease-in-out;
             cursor: pointer;
@@ -67,7 +67,7 @@ const skills = [
             &:hover {
                 color: $green-dark;
                 background: $white;
-                box-shadow: 0 0 20px rgba($green-light, 0.9);
+                box-shadow: $green-glow;
             }
         }
     }

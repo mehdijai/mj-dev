@@ -19,8 +19,8 @@ export const projects: IProject[] = [
       {
         id: 2,
         title: "Livewire",
-        bg: "#FB70A9",
-        color: "#4E56A6",
+        bg: "#f987b6",
+        color: "#3a4291",
       },
       {
         id: 5,
