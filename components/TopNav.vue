@@ -16,7 +16,7 @@
 
 <style lang="scss">
 .top-nav {
-    z-index: 0;
+    z-index: 80;
     position: fixed;
     background-color: $glass-white;
     backdrop-filter: $default-blur;

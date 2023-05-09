@@ -1,3 +1,5 @@
+@import "./keyframes.scss";
+
 /* Color styles */
 $black: rgba(12, 8, 5, 1);
 $white: rgba(255, 255, 255, 1);
@@ -13,3 +15,10 @@ $glass-black-dark: rgba(45, 45, 45, 0.9);
 /* Effect styles */
 $glass-blur: blur(8px);
 $default-blur: blur(4px);
+
+/* Clip Paths */
+$clip-rectangle: polygone(0 0, 0 100%, 100% 100%, 0 100%);
+$clip-scaled-down: polygone(0 100%, 100% 100%, 100% 100%, 0 100%);
+
+/* Animations */
+$cursor-flash: cursor-flash 1s ease-in-out alternate-reverse infinite

@@ -1,0 +1,11 @@
+@keyframes cursor-flash {
+    from {
+        
+        opacity: 0;
+        transform: translateY(-50%) scaleY(0);
+    }
+    to {
+        transform: translateY(-50%) scaleY(1);
+        opacity: 1;
+    }
+}

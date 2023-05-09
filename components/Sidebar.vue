@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+  z-index: 90;
   .sm-icon {
     &:nth-of-type(2) {
       margin-top: 20px;
