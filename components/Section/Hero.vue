@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 50px 0;
+    position: relative;
     .bg {
       .bg-img {
         position: absolute;
