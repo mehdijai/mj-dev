@@ -1,34 +1,35 @@
 @import "./vars.scss";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .msr {
-    font-family: "Material Symbols Rounded";
-    font-size: 24px;
+  font-family: "Material Symbols Rounded";
+  font-size: 24px;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: $black;
-    color: $white;
+  font-family: "Montserrat", sans-serif;
+  background-color: $black;
+  color: $white;
+  font-size: 14px;
 }
 
 .font-game {
-    font-family: "Press Start 2P", cursive !important;
+  font-family: "Press Start 2P", cursive !important;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
