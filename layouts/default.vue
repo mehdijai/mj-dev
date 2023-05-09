@@ -3,6 +3,7 @@
 <template>
   <TopNav class="top-nav" />
   <main class="page-body">
+    <PageBg />
     <Sidebar class="sidebar" />
     <slot />
   </main>
@@ -10,7 +11,7 @@
 </template>
 
 <style lang="scss">
-.page-body {
-  padding-left: 50px;
-}
+  .page-body {
+    padding-left: 50px;
+  }
 </style>
