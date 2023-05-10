@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import { projects } from "~/api/projects";
   import { IProject } from "~/types/global.type";
+  import { gsap } from "gsap";
 
   const route = useRoute();
   const router = useRouter();
@@ -22,6 +23,45 @@
   }
 
   const content = parseMd(data.value.content);
+
+  onMounted(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.8, ease: "power4.inOut" },
+    });
+    tl.fromTo(
+      ".project-page h1",
+      {
+        opacity: 0,
+        x: -20,
+      },
+      {
+        opacity: 1,
+        x: 0,
+      },
+    )
+      .fromTo(
+        ".project-page .tag",
+        {
+          opacity: 0,
+          y: -50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+        },
+        "-=0.6"
+      )
+      .fromTo(
+        ".project-page .content",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+        },
+      );
+  });
 </script>
 
 <template>
@@ -32,7 +72,7 @@
         <TagPill :tag="tag" />
       </template>
     </div>
-    <article v-html="content"></article>
+    <article class="content" v-html="content"></article>
   </article>
   <article v-else class="project-page">
     <img src="/loader.svg" />
@@ -49,10 +89,18 @@
       text-transform: uppercase;
       font-weight: 800;
       text-align: center;
+      opacity: 0;
     }
     .tags-list {
       justify-content: center;
       margin-bottom: 40px;
+
+      .tag {
+        opacity: 0;
+      }
+    }
+    .content {
+      opacity: 0;
     }
     h2 {
       font-size: 25px;
@@ -70,17 +118,17 @@
       margin: 10px 0;
     }
     img {
-        width: 100%;
-        margin: 20px 0;
+      width: 100%;
+      margin: 20px 0;
     }
     figure {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     video {
-        margin: auto 0;
-        width: 50%
+      margin: auto 0;
+      width: 50%;
     }
   }
 </style>

@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <div class="project-card" @click="$router.push('/' + project?.slug)">
+  <nuxt-link class="project-card" :to="'/' + project?.slug">
     <img :src="project?.thumbnail" :alt="project?.title" />
     <div class="project-info">
       <span class="title">{{ project?.title }}</span>
@@ -17,7 +17,7 @@
         </template>
       </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <style lang="scss">
@@ -62,6 +62,7 @@
         font-weight: 600;
         margin-bottom: 10px;
         display: block;
+        color: $white;
       }
     }
 
