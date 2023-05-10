@@ -1,5 +1,54 @@
 <script setup lang="ts">
   import { socialMediaLinks } from "~/api/social-media";
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  onMounted(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      defaults: { duration: 0.8, ease: "power4.inOut" },
+      scrollTrigger: {
+        trigger: ".contact",
+        once: true,
+      },
+    });
+    tl.from(".contact h2", {
+      opacity: 0,
+      x: -10,
+    })
+      .from(
+        ".contact p",
+        {
+          opacity: 0,
+          y: -50,
+        },
+        "-=0.5",
+      )
+      .from(
+        ".contact .link",
+        {
+          opacity: 0,
+          y: -50,
+        },
+        "-=0.5",
+      );
+    ScrollTrigger.batch(".sm li", {
+      once: true,
+      onEnter: (elements) =>
+        gsap.to(elements, {
+          opacity: 1,
+          y: 0,
+          stagger: 0.2,
+        }),
+      onLeaveBack: (elements) =>
+        gsap.set(elements, {
+          opacity: 0,
+          y: 50,
+          overwrite: true,
+        }),
+    });
+  });
 </script>
 
 <template>
@@ -36,6 +85,7 @@
       gap: 15px;
       li {
         transition: 0.3s ease-out;
+        opacity: 0;
         &::after {
           content: "";
           position: absolute;
