@@ -20,8 +20,8 @@
     position: fixed;
     background-color: $glass-white;
     backdrop-filter: $default-blur;
-    width: calc(100% - 20px);
-    margin-left: calc(20px);
+    width: calc(100% - 22px);
+    margin-left: calc(22px);
 
     .logo {
         margin-right: auto;

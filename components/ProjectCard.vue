@@ -58,11 +58,6 @@ defineProps({
             margin-bottom: 10px;
             display: block;
         }
-        .tags-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
     }
 }
 </style>
