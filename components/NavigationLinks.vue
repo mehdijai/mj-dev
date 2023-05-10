@@ -35,22 +35,4 @@
       color: $green-light;
     }
   }
-
-  .external {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 5px;
-    background: $white;
-    border-radius: 5px;
-    font-weight: 600;
-    color: $green-dark;
-    transition: 0.3s ease-out;
-
-    &:hover {
-      background: $green-light;
-      color: $black;
-    }
-  }
 </style>
