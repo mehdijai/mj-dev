@@ -17,34 +17,54 @@
 </template>
 
 <style lang="scss">
-.sidebar {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  .sm-icon {
-    &:nth-of-type(2) {
-      margin-top: 20px;
-    }
-    &:nth-last-child(2) {
-      margin-bottom: 20px;
-    }
-    margin: 5px 0;
-    transition: 0.3s ease-out;
-
-    &:hover {
-      transform: translateX(-5px);
-    }
-  }
-  .line {
-    background-color: $white;
-    width: 2px;
+  .sidebar {
+    position: fixed;
+    top: 0;
     height: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 90;
+    .sm-icon {
+      &:nth-of-type(2) {
+        margin-top: 20px;
+      }
+      &:nth-last-child(2) {
+        margin-bottom: 20px;
+      }
+      margin: 5px 0;
+      transition: 0.3s ease-out;
+      position: relative;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background-color: transparent;
+        transition: 0.3s ease-out;
+      }
+      &:hover {
+        &::after {
+          right: -10px;
+          background-color: $white;
+        }
+        transform: translateX(-5px);
+      }
+    }
+    .line {
+      background-color: $white;
+      width: 2px;
+      height: 100%;
+    }
   }
-}
 </style>

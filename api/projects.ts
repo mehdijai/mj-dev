@@ -7,7 +7,7 @@ export const projects: IProject[] = [
     slug: "autodrive-ma",
     thumbnail: "/projects/autodrive-ma/thumbnail.jpg",
     content:
-      '# **About the project**\n\nADM, a SaaS for vehicles renting in Morocco. Their task is to help the agencies to reach more people and the customers to find a suitable offer.\n[Official website](https://www.autodrive.ma)\n\n<img src="/projects/autodrive-ma/1 - Homepage.png" alt="autodrivemaroc.com homepage" />\n<img src="/projects/autodrive-ma/2 - vehicules all.png" alt="autodrivemaroc.com all vehicles" />\n<img src="/projects/autodrive-ma/3 - vehicules filter.png" alt="autodrivemaroc.com vehicles filter" />\n<img src="/projects/autodrive-ma/4 - vehicule page.png" alt="autodrivemaroc.com vehicle page" />\n<img src="/projects/autodrive-ma/5 - register.png" alt="autodrivemaroc.com register form" />\n<img src="/projects/autodrive-ma/6 - empty state.png" alt="autodrivemaroc.com dashboard empty state" />\n<img src="/projects/autodrive-ma/7 - Create car.png" alt="autodrivemaroc.com create car form" />\n<img src="/projects/autodrive-ma/8 - dashboard cars.png" alt="autodrivemaroc.com dashboard cars" />\n<img src="/projects/autodrive-ma/9 - login.png" alt="autodrivemaroc.com login form" />',
+      '## About the project. \n\nADM, a SaaS for vehicles renting in Morocco. Their task is to help the agencies to reach more people and the customers to find a suitable offer. [Official website](https://www.autodrive.ma)\n\n<img src="/projects/autodrive-ma/1 - Homepage.png" alt="autodrivemaroc.com homepage" />\n<img src="/projects/autodrive-ma/2 - vehicules all.png" alt="autodrivemaroc.com all vehicles" />\n<img src="/projects/autodrive-ma/3 - vehicules filter.png" alt="autodrivemaroc.com vehicles filter" />\n<img src="/projects/autodrive-ma/4 - vehicule page.png" alt="autodrivemaroc.com vehicle page" />\n<img src="/projects/autodrive-ma/5 - register.png" alt="autodrivemaroc.com register form" />\n<img src="/projects/autodrive-ma/6 - empty state.png" alt="autodrivemaroc.com dashboard empty state" />\n<img src="/projects/autodrive-ma/7 - Create car.png" alt="autodrivemaroc.com create car form" />\n<img src="/projects/autodrive-ma/8 - dashboard cars.png" alt="autodrivemaroc.com dashboard cars" />\n<img src="/projects/autodrive-ma/9 - login.png" alt="autodrivemaroc.com login form" />',
     publishedAt: "15/04/2022",
     tags: [
       {
@@ -19,8 +19,8 @@ export const projects: IProject[] = [
       {
         id: 2,
         title: "Livewire",
-        bg: "#FB70A9",
-        color: "#4E56A6",
+        bg: "#f987b6",
+        color: "#3a4291",
       },
       {
         id: 5,
