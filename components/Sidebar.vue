@@ -1,10 +1,38 @@
 <script setup lang="ts">
   import { socialMediaLinks } from "~/api/social-media";
+  import { gsap } from "gsap";
+
+  onMounted(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.5, ease: "power4.inOut" },
+    });
+    tl.from(".line-1", {
+      opacity: 0,
+      y: -5,
+    })
+      .from(
+        ".line-2",
+        {
+          opacity: 0,
+          y: 5,
+        },
+        "-=0.4",
+      )
+      .to(
+        ".sidebar .sm-icon",
+        {
+          opacity: 1,
+          x: 0,
+          stagger: 0.1,
+        },
+        "-=0.3",
+      );
+  });
 </script>
 
 <template>
   <ul class="sidebar">
-    <li class="line"></li>
+    <li class="line line-1"></li>
     <template v-for="sm in socialMediaLinks" :key="sm.name">
       <li class="sm-icon">
         <a :href="sm.url">
@@ -12,7 +40,7 @@
         </a>
       </li>
     </template>
-    <li class="line"></li>
+    <li class="line line-2"></li>
   </ul>
 </template>
 
@@ -42,7 +70,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      opacity: 0;
+      transform: translateX(-5px);
       &::after {
         content: "";
         position: absolute;

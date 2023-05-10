@@ -1,4 +1,4 @@
-@import "./keyframes.scss";
+// @import "./keyframes.scss";
 
 /* Color styles */
 $black: rgba(12, 8, 5, 1);
@@ -24,6 +24,7 @@ $clip-scaled-down: polygone(0 100%, 100% 100%, 100% 100%, 0 100%);
 
 /* Animations */
 $cursor-flash: cursor-flash 1s ease-in-out alternate-reverse infinite;
+$typing: typing 1s ease-in-out alternate-reverse infinite;
 
 /* Sizing */
 $section-content-width: 650px;

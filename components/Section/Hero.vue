@@ -1,4 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { gsap } from "gsap";
+
+  onMounted(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.8, ease: "power4.inOut" },
+    });
+    tl.to(".bg-img", {
+      opacity: 0.8,
+      x: 0,
+    })
+      .to(".hero h1", {
+        opacity: 1,
+        x: 0,
+      })
+      .to(
+        ".hero h2",
+        {
+          opacity: 1,
+          y: 0,
+        },
+        "-=0.5",
+      );
+  });
+</script>
 
 <template>
   <section class="hero">
@@ -19,16 +43,17 @@
     justify-content: flex-end;
     padding: 50px 0;
     position: relative;
+    overflow: hidden;
     .bg {
       .bg-img {
+        opacity: 0;
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) translateX(50px);
         height: 160vh;
         object-fit: cover;
         z-index: -2;
-        opacity: 0.6;
       }
     }
     .type-writer,
@@ -46,11 +71,15 @@
       text-transform: uppercase;
       font-size: 80px;
       line-height: 1;
+      opacity: 0;
+      transform: translateX(-100px);
     }
     h2 {
       font-weight: 500;
       font-size: 30px;
       line-height: 1.5;
+      opacity: 0;
+      transform: translateY(-40px);
     }
   }
 </style>
