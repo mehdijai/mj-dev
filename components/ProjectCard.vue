@@ -42,6 +42,7 @@
         opacity: 0.8;
       }
     }
+
     .project-info {
       position: absolute;
       bottom: $card-padding;
@@ -54,11 +55,19 @@
       width: calc(100% - ($card-padding * 2));
       padding: calc($card-padding * 2);
       box-shadow: $default-shadow;
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      transition: 0.2s ease-out;
 
       .title {
         font-weight: 600;
         margin-bottom: 10px;
         display: block;
+      }
+    }
+
+    &:hover {
+      .project-info {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
       }
     }
   }
