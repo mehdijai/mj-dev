@@ -34,7 +34,10 @@
 
     const tl = gsap.timeline({
       defaults: { duration: 0.8, ease: "power4.inOut" },
-      scrollTrigger: ".about",
+      scrollTrigger: {
+        trigger: ".about",
+        once: true,
+      },
     });
     tl.from(".about h2", {
       opacity: 0,
@@ -48,7 +51,7 @@
       "-=0.5",
     );
     ScrollTrigger.batch(".skill", {
-      duration: 0.4,
+      once: true,
       onEnter: (elements) =>
         gsap.to(elements, {
           opacity: 1,
