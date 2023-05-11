@@ -14,6 +14,7 @@ export interface ITag {
 export interface IProject {
     id: number;
     title: string;
+    description: string;
     slug: string;
     publishedAt: string;
     thumbnail: string;
