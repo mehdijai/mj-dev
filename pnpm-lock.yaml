@@ -27,6 +27,12 @@ devDependencies:
   nuxt:
     specifier: ^3.4.3
     version: 3.4.3(@types/node@18.0.0)(sass@1.62.1)(typescript@5.0.4)
+  nuxt-simple-robots:
+    specifier: ^2.3.0
+    version: 2.3.0
+  nuxt-simple-sitemap:
+    specifier: ^2.5.0
+    version: 2.5.0
 
 packages:
 
@@ -3330,6 +3336,35 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: false
+
+  /nuxt-simple-robots@2.3.0:
+    resolution: {integrity: sha512-ZiDPycr/MAhaQ5KxAojCBJA37vzz1jg8yxNRmn1I38sHnYi8DWHIJyJKXYI+jatqgKyFrMhyQnvVTK+SOS0w2A==}
+    dependencies:
+      '@nuxt/kit': 3.4.3
+      defu: 6.1.2
+      pathe: 1.1.0
+      ufo: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
+  /nuxt-simple-sitemap@2.5.0:
+    resolution: {integrity: sha512-W1w2UvGjFtNniFB+yFMH1DLnREdzkVC5qSF9EhQ9Xvi5acdPNnbHMBArarPF7i7z0uMtjm5kPjvV9S1o7InmJg==}
+    dependencies:
+      '@nuxt/kit': 3.4.3
+      chalk: 5.2.0
+      defu: 6.1.2
+      escape-string-regexp: 5.0.0
+      globby: 13.1.4
+      knitwork: 1.0.0
+      pathe: 1.1.0
+      radix3: 1.0.1
+      ufo: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
 
   /nuxt@3.4.3(@types/node@18.0.0)(sass@1.62.1)(typescript@5.0.4):
     resolution: {integrity: sha512-rOEdhHRH33m3L7aJDO7N8C+NC2vSa2mC/0hH/ePmg2S03qkzS0bVg1pIWW9ESDV5UVPFtfhOGoDTEkLJqvE18A==}

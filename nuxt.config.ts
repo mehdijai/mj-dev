@@ -35,7 +35,20 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-jsonld"],
+  modules: ["nuxt-jsonld", "nuxt-simple-robots", "nuxt-simple-sitemap"],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"],
+    },
+  },
+  sitemap: {
+    siteUrl: host,
+  },
+  robots: {
+    siteUrl: host,
+    sitemap: host + "/sitemap.xml",
+  },
   css: ["@/sass/main.scss"],
   vite: {
     css: {
