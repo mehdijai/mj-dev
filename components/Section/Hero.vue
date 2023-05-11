@@ -42,6 +42,9 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 50px 0;
+    @media screen and (max-width: 425px) {
+      padding: 70px 0;
+    }
     position: relative;
     overflow: hidden;
     .bg {
@@ -54,6 +57,11 @@
         height: 160vh;
         object-fit: cover;
         z-index: -2;
+
+        @media screen and (max-width: 425px) {
+          transform: translateY(-50%) translateX(50px);
+          height: 100vh;
+        }
       }
     }
     .type-writer,
@@ -64,6 +72,9 @@
 
     .type-writer {
       margin-bottom: 100px;
+      @media screen and (max-width: 425px) {
+        margin-bottom: 60px;
+      }
     }
 
     h1 {
@@ -73,6 +84,9 @@
       line-height: 1;
       opacity: 0;
       transform: translateX(-100px);
+      @media screen and (max-width: 425px) {
+        font-size: 50px;
+      }
     }
     h2 {
       font-weight: 500;
@@ -80,6 +94,10 @@
       line-height: 1.5;
       opacity: 0;
       transform: translateY(-40px);
+      @media screen and (max-width: 425px) {
+        font-weight: 400;
+        font-size: 20px;
+      }
     }
   }
 </style>

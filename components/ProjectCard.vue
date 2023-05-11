@@ -28,7 +28,7 @@
     overflow: hidden;
     border-radius: $card-border-radius;
     position: relative;
-    width: 360px;
+    width: 100%;
     aspect-ratio: 16/12;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 

@@ -49,6 +49,11 @@
     backdrop-filter: $default-blur;
     width: calc(100% - 22px);
     margin-left: calc(22px);
+    padding: 10px 0;
+    @media screen and (max-width: 425px) {
+      width: 100%;
+      margin-left: 0;
+    }
 
     .logo {
       margin-right: auto;
@@ -60,6 +65,11 @@
 
     .nav-list {
       max-width: 1000px;
+      @media screen and (max-width: 425px) {
+        max-width: unset;
+        width: 100%;
+        margin: 0;
+      }
       padding: 0;
       margin: 0 auto;
       display: flex;
@@ -67,8 +77,18 @@
       padding: 0 20px;
       gap: 10px;
 
+      li {
+        &:not(.logo, .menu-toggler) {
+          @media screen and (max-width: 425px) {
+            display: none;
+          }
+        }
+      }
       .menu-toggler {
-        // display: none;
+        display: none;
+        @media screen and (max-width: 425px) {
+          display: block;
+        }
         button {
           border: none;
           padding: 5px;
@@ -80,7 +100,7 @@
   }
   .list-menu {
     position: fixed;
-    top: 48px;
+    top: 55px;
     z-index: 999;
     background-color: $glass-black-deep;
     backdrop-filter: $default-blur;

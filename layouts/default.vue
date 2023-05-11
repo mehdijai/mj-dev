@@ -36,6 +36,9 @@
 <style lang="scss">
   .page-body {
     padding-left: 50px;
+    @media screen and (max-width: 425px) {
+      padding-left: 25px;
+    }
   }
   .fab {
     display: none;
@@ -51,6 +54,15 @@
     cursor: pointer;
     overflow: hidden;
     transition: 0.3s ease-in-out;
+    @media screen and (max-width: 425px) {
+      padding: 5px;
+      border-radius: 5px;
+      bottom: 39px;
+      right: 25px;
+      span {
+        font-size: 18px;
+      }
+    }
     &::after {
       content: "";
       width: 100%;
@@ -72,7 +84,7 @@
     &:hover,
     &:active {
       &::after {
-        height: 100%
+        height: 100%;
       }
       span {
         color: $green-dark;

@@ -7,7 +7,7 @@
     "CSS",
     "JS",
     "TailwindCSS",
-    "SCSS/SASS",
+    "SCSS / SASS",
     "GSAP",
     "VueJS",
     "NuxtJS",
@@ -89,11 +89,18 @@
 <style lang="scss">
   .about {
     min-height: 100vh;
+    @media screen and (max-width: 425px) {
+      padding-right: 25px;
+    }
     .skills {
       width: $section-content-width;
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      @media screen and (max-width: 425px) {
+        gap: 5px;
+        width: 90%;
+      }
       .skill {
         color: $white;
         background: darken($green-dark, 10);
@@ -106,6 +113,11 @@
         transition: 0.4s ease-in-out;
         cursor: pointer;
         clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+
+        @media screen and (max-width: 425px) {
+          font-weight: 600;
+          font-size: 12px;
+        }
 
         &:hover {
           color: $green-dark;

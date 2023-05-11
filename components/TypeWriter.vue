@@ -2,18 +2,41 @@
   import { gsap, SteppedEase } from "gsap";
 
   onMounted(() => {
+    const breakpointsMatch = {
+      md: window.matchMedia("(max-width: 768px) and (min-width: 427px)").matches,
+      sm: window.matchMedia("(max-width: 427px) and (min-width: 350px)").matches,
+      xs: window.matchMedia("(max-width: 350px)").matches,
+    };
+
     const tl = gsap.timeline({
       defaults: { duration: 1, ease: SteppedEase.config(20) },
     });
-    tl.fromTo(
-      ".anim-typewriter",
-      {
-        width: 0,
-      },
-      {
-        width: 340,
-      },
-    );
+
+    if (breakpointsMatch.xs == true || breakpointsMatch.sm === true) {
+      tl.fromTo(
+        ".anim-typewriter",
+        {
+          width: 0,
+        },
+        {
+          width: 235,
+        },
+      );
+    }
+    if (
+      breakpointsMatch.md === true ||
+      Object.values(breakpointsMatch).every((match) => match === false) === true
+    ) {
+      tl.fromTo(
+        ".anim-typewriter",
+        {
+          width: 0,
+        },
+        {
+          width: 340,
+        },
+      );
+    }
     tl.fromTo(
       ".anim-typewriter",
       {
@@ -44,26 +67,13 @@
     box-sizing: content-box;
     display: flex;
     align-items: flex-end;
-    // background-color: red;
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   right: 0;
-    //   top: 50%;
-    //   height: 100%;
-    //   width: 5px;
-    //   background-color: $white;
-    //   transform-origin: center center;
-    //   transform: translateY(-50%);
-    //   animation: $cursor-flash;
-    // }
+    @media screen and (max-width: 425px) {
+      font-size: 35px;
+    }
     span {
       display: block;
       user-select: none;
       line-height: 1;
-      // &:nth-of-type(2) {
-      //   clip-path: polygone(0 100%, 100% 100%, 100% 100%, 0 100%);
-      // }
     }
   }
 </style>

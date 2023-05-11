@@ -42,6 +42,9 @@
       margin: 0 auto;
       text-align: center;
       width: max-content;
+      @media screen and (max-width: 425px) {
+        font-size: 12px;
+      }
     }
   }
 </style>
