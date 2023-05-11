@@ -47,8 +47,8 @@
     position: fixed;
     background-color: $glass-white;
     backdrop-filter: $default-blur;
-    width: calc(100% - 22px);
-    margin-left: calc(22px);
+    width: calc(100% - 23px);
+    margin-left: calc(23px);
     padding: 10px 0;
     @media screen and (max-width: 425px) {
       width: 100%;
