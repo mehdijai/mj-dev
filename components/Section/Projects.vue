@@ -48,6 +48,9 @@
 
 <style lang="scss">
   .projects {
+    @media screen and (max-width: 425px) {
+      padding-right: 25px;
+    }
     h2 {
       text-align: center;
     }
@@ -56,6 +59,17 @@
       grid-template-columns: repeat(3, 360px);
       gap: 20px;
       padding: 50px 0;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(3, 300px);
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 300px);
+      }
+      @media screen and (max-width: 425px) {
+        grid-template-columns: repeat(1, 360px);
+      }
     }
   }
 </style>

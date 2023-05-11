@@ -50,7 +50,7 @@
           y: 0,
           stagger: 0.1,
         },
-        "-=0.6"
+        "-=0.6",
       )
       .fromTo(
         ".project-page .content",
@@ -83,6 +83,10 @@
   .project-page {
     min-height: 100vh;
     padding: 50px 50px 50px 20px;
+    @media screen and (max-width: 425px) {
+      padding: 0;
+      padding: 50px 25px 60px 0;
+    }
     h1 {
       font-size: 40px;
       margin: 50px 0 20px 0;
@@ -90,6 +94,10 @@
       font-weight: 800;
       text-align: center;
       opacity: 0;
+
+      @media screen and (max-width: 320px) {
+        font-size: 20px;
+      }
     }
     .tags-list {
       justify-content: center;
@@ -106,11 +114,17 @@
       font-size: 25px;
       margin: 0 auto 20px auto;
       width: $section-content-width;
+      @media screen and (max-width: 320px) {
+        width: 90%;
+      }
     }
     p {
       width: $section-content-width;
       text-align: justify;
       margin: 0 auto 30px auto;
+      @media screen and (max-width: 320px) {
+        width: 90%;
+      }
     }
     a {
       display: block;
@@ -120,6 +134,9 @@
     img {
       width: 100%;
       margin: 20px 0;
+      @media screen and (max-width: 320px) {
+        margin: 5px 0;
+      }
     }
     figure {
       display: flex;

@@ -56,6 +56,9 @@
     justify-content: space-between;
     padding: 0 10px;
     z-index: 90;
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
     .sm-icon {
       &:nth-of-type(2) {
         margin-top: 20px;
