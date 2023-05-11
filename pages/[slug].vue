@@ -2,6 +2,7 @@
   import { projects } from "~/api/projects";
   import { IProject } from "~/types/global.type";
   import { gsap } from "gsap";
+  import { seoData } from "~/api/seo";
 
   const route = useRoute();
   const router = useRouter();
@@ -23,6 +24,54 @@
   }
 
   const content = parseMd(data.value.content);
+
+  useSeoMeta({
+    title: `Mehdi Jai | ${data.value.title}`,
+    description: data.value.description,
+    formatDetection: "telephone=no",
+    author: seoData.author,
+    charset: "utf-8",
+    ogTitle: `Mehdi Jai | ${data.value.title}`,
+    ogSiteName: `Mehdi Jai | ${data.value.title}`,
+    ogType: "website",
+    ogUrl: `${seoData.hostUrl}/${data.value.slug}`,
+    ogDescription: data.value.description,
+    ogImage: data.value.thumbnail,
+    ogImageAlt: `Mehdi Jai | ${data.value.title}`,
+    twitterCard: "summary",
+    twitterDescription: data.value.description,
+    twitterTitle: `Mehdi Jai | ${data.value.title}`,
+    twitterCreatorId: seoData.twitterCreatorId,
+    twitterImage: data.value.thumbnail,
+    twitterImageAlt: `Mehdi Jai | ${data.value.title}`,
+    robots: {
+      index: true,
+      follow: true,
+      all: true,
+    },
+    xUaCompatible: "IE=edge",
+  });
+
+  useJsonld(() => ({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `Mehdi Jai | ${data.value.title}`,
+    description: data.value.description,
+    url: `${seoData.hostUrl}/${data.value.slug}`,
+    author: {
+      "@type": "Person",
+      name: seoData.author,
+    },
+    datePublished: data.value.publishedAt,
+    dateModified: data.value.publishedAt,
+    image: data.value.thumbnail,
+    inLanguage: "en",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${seoData.hostUrl}/${data.value.slug}`,
+    },
+    isAccessibleForFree: true,
+  }));
 
   onMounted(() => {
     const tl = gsap.timeline({

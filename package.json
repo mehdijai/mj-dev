@@ -21,6 +21,7 @@
     "@types/marked": "^4.3.0",
     "gsap": "^3.11.5",
     "marked": "^5.0.1",
+    "nuxt-jsonld": "^2.0.8",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2"
   }

@@ -11,3 +11,18 @@ export function parseMd(md: string): string {
 
   return marked.parse(md);
 }
+
+export function extractDescription(html: string): string {
+  const tempElement = document.createElement("div");
+  tempElement.innerHTML = html;
+
+  const paragraphElement = tempElement.querySelector("p");
+
+  if (paragraphElement == null) return "";
+
+  const paragraphContent = paragraphElement.textContent;
+
+  if (paragraphContent == null) return "";
+
+  return paragraphContent;
+}
