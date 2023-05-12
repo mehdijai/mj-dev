@@ -199,31 +199,6 @@ export const projects: IProject[] = [
     ],
   },
   {
-    id: 6,
-    title: "SidiBooking",
-    slug: "sidibooking",
-    thumbnail: "/projects/sidibooking/thumbnail.png",
-    description:
-      "Sidibooking is a platform specialized in daily rental appartments in Morocco. It is made to be simple, and easy to use. Created using AstroJS SSG with AlpineJS.",
-    content:
-      '## About the project\n\nSidibooking is a platform specialized in daily rental appartments in Morocco. It is made to be simple, and easy to use.\n[Official website](https://www.sidibooking.com)\n\n<img src="/projects/sidibooking/img-1.png" alt="Sidibooking homepage screenshot" />\n<img src="/projects/sidibooking/img-2.png" alt="Sidibooking Appartment page screenshot" />\n<img src="/projects/sidibooking/img-3.png" alt="Sidibooking Picture viewer modal screenshot" />\n<img src="/projects/sidibooking/img-4.png" alt="Sidibooking Feedback form screenshot" />',
-    publishedAt: "03/05/2023",
-    tags: [
-      {
-        id: 6,
-        title: "AlpineJS",
-        bg: "#77C1D2",
-        color: "#2D3441",
-      },
-      {
-        id: 18,
-        title: "AstroJS",
-        bg: "#0D031F",
-        color: "#FF5805",
-      },
-    ],
-  },
-  {
     id: 7,
     title: "BleuTaxi",
     slug: "bleutaxi",
