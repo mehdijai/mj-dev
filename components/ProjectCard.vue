@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <nuxt-link class="project-card" :to="'/' + project?.slug">
+  <nuxt-link class="project-card" :to="'/projects/' + project?.slug">
     <img :src="project?.thumbnail" :alt="project?.title" />
     <div class="project-info">
       <span class="title">{{ project?.title }}</span>
