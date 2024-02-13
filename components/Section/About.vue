@@ -6,23 +6,27 @@
     "HTML",
     "CSS",
     "JS",
-    "TailwindCSS",
     "SCSS / SASS",
     "GSAP",
     "VueJS",
+    "Vuetify",
     "NuxtJS",
     "AlpineJS",
     "ES6",
     "TypeScript",
-    "AstroJS",
     "NodeJS",
+    "NestJS",
+    "GraphQL",
     "ExpressJS",
     "PrismaJS",
     "PHP",
     "Laravel",
-    "SQL",
+    "MySQL",
+    "MariaDB",
+    "SQL Server",
     "Git",
-    "Github",
+    "GitHub",
+    "GitLab",
     "Bitbucket",
     "Jira",
     "MS DevOps",
@@ -72,11 +76,21 @@
   <section class="about section" id="about">
     <h2>About me</h2>
     <p>
-      <strong>Mehdi Jai, VueJS Frontend web developer.</strong> I'm a curious, autonomous developer.
-      I started my journey in 2019 professionally. The beginning was with building my two majors
-      SaaS; Tabarro3.ma, Autodrive.ma. I have a long experience with JavaScript/TypeScript,
-      SCSS/SASS, NodeJS, and PHP Laravel, VueJS. Plus, ElectronJS, VBA, Figma, and other tools,
-      programming languages, and skills.
+      <strong>
+        Mehdi Jai, Lead Fullstack developer at <a class="link" href="https://squarefeet.cloud">Squarefeet™</a>.
+        Specialized in VueJS, NodeJS and LaravelPHP
+      </strong>
+      I'm a curious, autonomous developer. I started my journey in 2019 professionally. The
+      beginning was with building my two majors SaaS; Tabarro3.ma, Autodrive.ma. I have a long
+      experience with JavaScript/TypeScript, SCSS/SASS, NodeJS, and PHP Laravel, VueJS. Plus,
+      ElectronJS, VBA, Figma, and other tools, programming languages, and skills.
+    </p>
+    <p>
+      During my carrer, I worked startups and was responsible for developing, creating, maintaining
+      and deploying Web Applications. This experience led me to acquiring good skill set in tech,
+      from technical skills at languages and frameworks, infrastructure and handling production
+      projects, to soft skills as team player, leading projects, critical thinking, and
+      solution-driven mentality
     </p>
     <div class="skills">
       <template v-for="skill in skills" :key="skill">

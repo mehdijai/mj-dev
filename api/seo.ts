@@ -1,7 +1,7 @@
 export const seoData = {
   title: "Mehdi Jai | VueJS Frontend Developer",
   description:
-    "Mehdi Jai, VueJS Frontend Developer, and UI Designer. I create beautiful interactive interfaces for SaaS', landing pages, and wherever I can write CSS.",
+    "Mehdi Jai, Lead Fullstack developer at Squarefeet™. Specialized in VueJS, NodeJS and LaravelPHP",
   author: "Mehdi Jai",
   hostUrl: "https://mehdijai.com",
   coverImage: "https://mehdijai.com/cover.png",
