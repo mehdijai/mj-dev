@@ -303,4 +303,35 @@ export const projects: IProject[] = [
       },
     ],
   },
+  {
+    id: 10,
+    title: "Floor Editor Demo",
+    slug: "floor-editor",
+    thumbnail: "/projects/plan-editor/page.png",
+    description:
+      "SVG Plan editor demo. It's a part of a project of Restaurant Manager. The plan editor helps create interactive floor with pre-defined tables. It's easy to use, because it's just drag and drop.",
+    content:
+      '# About the project\nSVG Plan editor demo. It\'s a part of a project of Restaurant Manager. The plan editor helps create interactive floor with pre-defined tables. It\'s easy to use, because it\'s just drag and drop.\n[View demo](https://plan-editor.pages.dev)\n<img src="/projects/plan-editor/page.png" alt="Demo of floor editor" />',
+    publishedAt: "14/02/2024",
+    tags: [
+      {
+        id: 3,
+        title: "Vue",
+        bg: "#42B883",
+        color: "#ffffff",
+      },
+      {
+        id: 20,
+        title: "TypeScript",
+        bg: "#3178c6",
+        color: "#ffffff",
+      },
+      {
+        id: 20,
+        title: "Paper.js",
+        bg: "#E5151A",
+        color: "#ffffff",
+      },
+    ],
+  },
 ];
