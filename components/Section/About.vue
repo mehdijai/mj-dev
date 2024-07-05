@@ -77,13 +77,12 @@
     <h2>About me</h2>
     <p>
       <strong>
-        Mehdi Jai, Lead Fullstack developer at <a class="link" href="https://squarefeet.cloud">Squarefeet™</a>.
-        Specialized in VueJS, NodeJS and LaravelPHP
+        Mehdi Jai, Lead Fullstack developer. Specialized in VueJS, NodeJS, and PHP Laravel
       </strong>
       I'm a curious, autonomous developer. I started my journey in 2019 professionally. The
       beginning was with building my two majors SaaS; Tabarro3.ma, Autodrive.ma. I have a long
       experience with JavaScript/TypeScript, SCSS/SASS, NodeJS, and PHP Laravel, VueJS. Plus,
-      ElectronJS, VBA, Figma, and other tools, programming languages, and skills.
+      ElectronJS, Figma, and other tools, programming languages, and skills.
     </p>
     <p>
       During my carrer, I worked startups and was responsible for developing, creating, maintaining
