@@ -167,142 +167,142 @@ export const projects: IProject[] = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "Sogesoft",
-    slug: "sogesoft",
-    thumbnail: "/projects/sogesoft/thumbnail.png",
-    description:
-      "Sogesoft is a software development company. Made to help corporate and startup business to concretize their digital solutions. The website contains a presentation of the company and its services, job offers, and the teaching program they provide.This website is a static made with pure HTML, CSS and JS",
-    content:
-      '## About the project\n\nSogesoft is a software development company. Made to help corporate and startup business to concretize their digital solutions. The website contains a presentation of the company and its services, job offers, and the teaching program they provide.\nThis website is a static made with pure HTML, CSS and JS.\n[Official website](https://www.sogesoft.fr)\n\n<img src="/projects/sogesoft/img-1.png" alt="Sogesoft Homepage screenshot" />\n<img src="/projects/sogesoft/img-2.png" alt="Sogesoft Jobs page screenshot" />\n<img src="/projects/sogesoft/img-3.png" alt="Sogesoft Teaching page screenshot" />\n',
-    publishedAt: "03/05/2023",
-    tags: [
-      {
-        id: 5,
-        title: "SASS",
-        bg: "#CD6799",
-        color: "#ffffff",
-      },
-      {
-        id: 6,
-        title: "AlpineJS",
-        bg: "#77C1D2",
-        color: "#2D3441",
-      },
-      {
-        id: 16,
-        title: "HTML5",
-        bg: "#e34c26",
-        color: "#ffffff",
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: "BleuTaxi",
-    slug: "bleutaxi",
-    thumbnail: "/projects/bleutaxi/thumbnail.png",
-    description:
-      "BleuTaxi is mobile application that provides a simple, safe and easy to use application to request rides. With only one click! additionally, flexible options. such as, a destination address, autocomplete address (Available in north France only). With the ability to start the course immediately, or schedule. I built two mobile applications for this project with Ionic x VueJS. For client, and for the driver.",
-    content:
-      '## About the project\n\nBleuTaxi is mobile application that provides a simple, safe and easy to use application to request rides. With only one click! additionally, flexible options. such as, a destination address, autocomplete address (Available in north france only). With the ability to start the course immediately, or schedule.\nI built two mobile applications for this project with Ionic x VueJS. For client, and for the driver.\n[Official website](https://www.bleutaxi.com)\n\n<img src="/projects/bleutaxi/img-1.png" alt="BleuTaxi Application startup screenshot" />\n<img src="/projects/bleutaxi/img-2.png" alt="BleuTaxi Application Command page" />\n<img src="/projects/bleutaxi/img-3.png" alt="BleuTaxi Application Profile page" />\n<img src="/projects/bleutaxi/img-4.png" alt="BleuTaxi Landingpage screenshot" />\n',
-    publishedAt: "03/05/2023",
-    tags: [
-      {
-        id: 3,
-        title: "Vue",
-        bg: "#42B883",
-        color: "#ffffff",
-      },
-      {
-        id: 5,
-        title: "SASS",
-        bg: "#CD6799",
-        color: "#ffffff",
-      },
-      {
-        id: 11,
-        title: "GSAP",
-        bg: "#88CE02",
-        color: "#ffffff",
-      },
-      {
-        id: 16,
-        title: "HTML5",
-        bg: "#e34c26",
-        color: "#ffffff",
-      },
-      {
-        id: 17,
-        title: "Ionic",
-        bg: "#387ef5",
-        color: "#ffffff",
-      },
-    ],
-  },
-  {
-    id: 8,
-    title: "MyColis France",
-    slug: "mycolis-france",
-    thumbnail: "/projects/mycolis-france/thumbnail.png",
-    description:
-      "Mycolis France is a C2C door-to-door delivery service in France. For this project, I created a supervision platform, and the landing page.",
-    content:
-      '## About the project\n\nMycolis France is a C2C door-to-door delivery service in France.\\nFor this project, I created a supervision platform, and the landing page.\n[Official website](https://mycolisfrance.com/)\n\n<img src="/projects/mycolis-france/img-1.png" alt="Mycolis Landingpage screenshot" />',
-    publishedAt: "03/05/2023",
-    tags: [
-      {
-        id: 5,
-        title: "SASS",
-        bg: "#CD6799",
-        color: "#ffffff",
-      },
-      {
-        id: 15,
-        title: "JavaScript",
-        bg: "#F0DB4F",
-        color: "#323330",
-      },
-      {
-        id: 16,
-        title: "HTML5",
-        bg: "#e34c26",
-        color: "#ffffff",
-      },
-    ],
-  },
-  {
-    id: 9,
-    title: "Alkoutab",
-    slug: "alkoutab",
-    thumbnail: "/projects/alkoutab/thumbnail.png",
-    description:
-      "Alkoutab is a state-accredited preschool focused on the education and development of the child and the nurturement of the mind. Also, it's a school dedicated to students who want to excel in their academic and professional careers. And develop their knowledge in various subjects.",
-    content:
-      '## About the project\n\nAlkoutab is a state-accredited preschool focused on the education and development of the child and the nurturement of the mind. Also, it\'s a school dedicated to students who want to excel in their academic and professional careers. And develop their knowledge in various subjects.\n[Official website](https://www.alkoutab.com)\n\n<img src="/projects/alkoutab/img-1.png" alt="Alkoutab landingpage screenshot" />\n',
-    publishedAt: "03/05/2023",
-    tags: [
-      {
-        id: 5,
-        title: "SASS",
-        bg: "#CD6799",
-        color: "#ffffff",
-      },
-      {
-        id: 15,
-        title: "JavaScript",
-        bg: "#F0DB4F",
-        color: "#323330",
-      },
-      {
-        id: 16,
-        title: "HTML5",
-        bg: "#e34c26",
-        color: "#ffffff",
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "Sogesoft",
+  //   slug: "sogesoft",
+  //   thumbnail: "/projects/sogesoft/thumbnail.png",
+  //   description:
+  //     "Sogesoft is a software development company. Made to help corporate and startup business to concretize their digital solutions. The website contains a presentation of the company and its services, job offers, and the teaching program they provide.This website is a static made with pure HTML, CSS and JS",
+  //   content:
+  //     '## About the project\n\nSogesoft is a software development company. Made to help corporate and startup business to concretize their digital solutions. The website contains a presentation of the company and its services, job offers, and the teaching program they provide.\nThis website is a static made with pure HTML, CSS and JS.\n[Official website](https://www.sogesoft.fr)\n\n<img src="/projects/sogesoft/img-1.png" alt="Sogesoft Homepage screenshot" />\n<img src="/projects/sogesoft/img-2.png" alt="Sogesoft Jobs page screenshot" />\n<img src="/projects/sogesoft/img-3.png" alt="Sogesoft Teaching page screenshot" />\n',
+  //   publishedAt: "03/05/2023",
+  //   tags: [
+  //     {
+  //       id: 5,
+  //       title: "SASS",
+  //       bg: "#CD6799",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 6,
+  //       title: "AlpineJS",
+  //       bg: "#77C1D2",
+  //       color: "#2D3441",
+  //     },
+  //     {
+  //       id: 16,
+  //       title: "HTML5",
+  //       bg: "#e34c26",
+  //       color: "#ffffff",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 7,
+  //   title: "BleuTaxi",
+  //   slug: "bleutaxi",
+  //   thumbnail: "/projects/bleutaxi/thumbnail.png",
+  //   description:
+  //     "BleuTaxi is mobile application that provides a simple, safe and easy to use application to request rides. With only one click! additionally, flexible options. such as, a destination address, autocomplete address (Available in north France only). With the ability to start the course immediately, or schedule. I built two mobile applications for this project with Ionic x VueJS. For client, and for the driver.",
+  //   content:
+  //     '## About the project\n\nBleuTaxi is mobile application that provides a simple, safe and easy to use application to request rides. With only one click! additionally, flexible options. such as, a destination address, autocomplete address (Available in north france only). With the ability to start the course immediately, or schedule.\nI built two mobile applications for this project with Ionic x VueJS. For client, and for the driver.\n[Official website](https://www.bleutaxi.com)\n\n<img src="/projects/bleutaxi/img-1.png" alt="BleuTaxi Application startup screenshot" />\n<img src="/projects/bleutaxi/img-2.png" alt="BleuTaxi Application Command page" />\n<img src="/projects/bleutaxi/img-3.png" alt="BleuTaxi Application Profile page" />\n<img src="/projects/bleutaxi/img-4.png" alt="BleuTaxi Landingpage screenshot" />\n',
+  //   publishedAt: "03/05/2023",
+  //   tags: [
+  //     {
+  //       id: 3,
+  //       title: "Vue",
+  //       bg: "#42B883",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 5,
+  //       title: "SASS",
+  //       bg: "#CD6799",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 11,
+  //       title: "GSAP",
+  //       bg: "#88CE02",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 16,
+  //       title: "HTML5",
+  //       bg: "#e34c26",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 17,
+  //       title: "Ionic",
+  //       bg: "#387ef5",
+  //       color: "#ffffff",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 8,
+  //   title: "MyColis France",
+  //   slug: "mycolis-france",
+  //   thumbnail: "/projects/mycolis-france/thumbnail.png",
+  //   description:
+  //     "Mycolis France is a C2C door-to-door delivery service in France. For this project, I created a supervision platform, and the landing page.",
+  //   content:
+  //     '## About the project\n\nMycolis France is a C2C door-to-door delivery service in France.\\nFor this project, I created a supervision platform, and the landing page.\n[Official website](https://mycolisfrance.com/)\n\n<img src="/projects/mycolis-france/img-1.png" alt="Mycolis Landingpage screenshot" />',
+  //   publishedAt: "03/05/2023",
+  //   tags: [
+  //     {
+  //       id: 5,
+  //       title: "SASS",
+  //       bg: "#CD6799",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 15,
+  //       title: "JavaScript",
+  //       bg: "#F0DB4F",
+  //       color: "#323330",
+  //     },
+  //     {
+  //       id: 16,
+  //       title: "HTML5",
+  //       bg: "#e34c26",
+  //       color: "#ffffff",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   title: "Alkoutab",
+  //   slug: "alkoutab",
+  //   thumbnail: "/projects/alkoutab/thumbnail.png",
+  //   description:
+  //     "Alkoutab is a state-accredited preschool focused on the education and development of the child and the nurturement of the mind. Also, it's a school dedicated to students who want to excel in their academic and professional careers. And develop their knowledge in various subjects.",
+  //   content:
+  //     '## About the project\n\nAlkoutab is a state-accredited preschool focused on the education and development of the child and the nurturement of the mind. Also, it\'s a school dedicated to students who want to excel in their academic and professional careers. And develop their knowledge in various subjects.\n[Official website](https://www.alkoutab.com)\n\n<img src="/projects/alkoutab/img-1.png" alt="Alkoutab landingpage screenshot" />\n',
+  //   publishedAt: "03/05/2023",
+  //   tags: [
+  //     {
+  //       id: 5,
+  //       title: "SASS",
+  //       bg: "#CD6799",
+  //       color: "#ffffff",
+  //     },
+  //     {
+  //       id: 15,
+  //       title: "JavaScript",
+  //       bg: "#F0DB4F",
+  //       color: "#323330",
+  //     },
+  //     {
+  //       id: 16,
+  //       title: "HTML5",
+  //       bg: "#e34c26",
+  //       color: "#ffffff",
+  //     },
+  //   ],
+  // },
   {
     id: 10,
     title: "Floor Editor Demo",
