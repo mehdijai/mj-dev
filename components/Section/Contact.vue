@@ -54,8 +54,9 @@
 <template>
   <section class="contact section" id="contact">
     <h2>Let's Get In Touch</h2>
-    <p>I’m currently open for work as VueJS/JS frontend developer opportunity.</p>
-    <a class="link" href="mailto:contact@mehdijai.com">contact@mehdijai.com</a>
+    <p>I’m currently open for work as VueJS/NodeJS frontend developer opportunity.</p>
+    <p>Check out my resume for more details <a href="/_resume.pdf" target="_blank" style="display: inline;" class="link">Resume</a></p>
+    <a class="link" href="mailto:mehdi.jai@proton.me">mehdi.jai@proton.me</a>
     <ul class="sm">
       <template v-for="sm in socialMediaLinks" :key="sm.name">
         <li>

@@ -11,9 +11,4 @@ export const socialMediaLinks: SMLink[] = [
         url: "https://linkedin.com/mehdijai",
         logo: "/linkedin.svg"
     },
-    {
-        name: "Twitter",
-        url: "https://twitter.com/jai_mehdi",
-        logo: "/twitter.svg"
-    },
 ]

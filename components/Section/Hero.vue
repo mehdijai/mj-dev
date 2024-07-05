@@ -31,7 +31,7 @@
     </div>
     <TypeWriter />
     <h1>Mehdi Jai</h1>
-    <h2>VueJS Frontend Web Developer</h2>
+    <h2>Full-stack Web Developer</h2>
   </section>
 </template>
 
