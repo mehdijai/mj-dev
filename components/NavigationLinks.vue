@@ -11,7 +11,7 @@
     <nuxt-link class="nav-link" to="/#contact">Get in touch</nuxt-link>
   </li>
   <li>
-    <a target="_blank" href="/_resume.pdf" class="external">Resume</a>
+    <a target="_blank" href="https://mehdijai.com/resume.pdf" class="external">Resume</a>
   </li>
 </template>
 
